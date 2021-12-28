@@ -663,8 +663,8 @@ ul {
     }
 
     .matrikulasi img {
-        width: 400px;
-        height: 400px;
+        width: 90%;
+        height: auto;
         margin: 0px auto;
     }
 
