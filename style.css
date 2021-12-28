@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@500&display=swap');
+
+@keyframes geser {
+    from {
+        right: 1200px;
+    }
+
+    to {
+        right: 0px
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.utama {
+    background: url(img/background3.png);
+    background-position: 0 -50px;
+    background-color: #F5D2FF;
+    background-repeat: no-repeat;
+}
+
+.bgjurusan {
+    background: url(img/bgjurusan2.png);
+    background-position: 0 -200px;
+    background-color: #F5D2FF;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgmatrik {
+    background: url(img/bgmatrik.png);
+    background-position: 0 -200px;
+    background-color: #F5D2FF;
+    background-repeat: no-repeat;
+}
+
+.bgfasilitas {
+    background: url(img/bgfasilitas2.png);
+    background-position: 0 100px;
+    background-color: #F5D2FF;
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+.navflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+    height: 70px;
+    align-items: center;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: #f05454;
+    font-size: 0.85em;
+}
+
+.menu-toggle {
+    display: none;
+    z-index: 999;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: -7px;
+    margin-top: -7px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+/* responsive nav*/
+
+/* ukuran tablet */
+/* @media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+} */
+
+
+/* ukuran mobile */
+@media screen and (max-width: 860px) {
+    nav ul {
+        position: absolute;
+        right: -25px;
+        top: -10px;
+        flex-direction: column;
+        height: 100vh;
+        width: 80%;
+        background-color: #C6F5FD;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(110%);
+        transition: all 1s;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+/* halaman utama */
+
+
+.content1 {
+    width: 100%;
+    height: 700px;
+    padding: 200px 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.content1 h3 {
+    font-size: 30px;
+}
+
+.content1 h1 {
+    font-size: 50px;
+}
+
+.content1 img {
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.content1 .text {
+    margin-top: 80px;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vmm {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.kotak {
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -100px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0px 50px 10px -30px rgba(0, 0, 0, 0.5);
+    /* animasi */
+    position: relative;
+    animation-name: geser;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    transition: .5s;
+}
+
+.kotak a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.kotak:hover {
+    box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.5);
+}
+
+.kotak h2 {
+    margin-bottom: 20px;
+}
+
+.iconn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f05454;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    background-color: #ee8282;
+}
+
+.sejarah {
+    padding: 0px 6% 100px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.sejarah ul li {
+    list-style-type: disc;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.sejarah h1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.sejarah h3 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.matrikulasi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 200px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.matrikulasi h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    justify-content: center;
+    color: black;
+}
+
+.matrikulasi h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.matrikulasi img {
+    width: 450px;
+    height: 450px;
+    /* animasi */
+    position: relative;
+    animation-name: geser;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.fasilitas .kantin {
+    display: flex;
+    padding: 200px 6% 0px;
+}
+
+.fasilitas h1 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.fasilitas img {
+    width: 450px;
+    height: 300px;
+    margin-bottom: 10px;
+    /* animasi */
+    position: relative;
+    animation-name: geser;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.fasilitas .kantin .text {
+    padding-left: 80px;
+    padding-top: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fasilitas .perpustakaan {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 200px 6% 0px;
+}
+
+.perpustakaan .text {
+    padding-right: 75px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fasilitas .perpustakaan h1 {
+    margin-top: 10px;
+}
+
+.text a {
+    color: #f05454;
+}
+
+.contimgfas {
+    background-color: #F5D2FF;
+}
+
+.contimgfas h1 {
+    color: black;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.fotofasilitas .gedung h1 {
+    margin-top: 100px;
+}
+
+.fotofasilitas {
+    display: flex;
+    justify-content: center;
+}
+
+.fotofasilitas img {
+    padding-right: 20px;
+}
+
+/* halaman jurusan */
+
+.jurusan h1 {
+    display: flex;
+    margin-top: 75px;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.galerij {
+    max-width: 90%;
+    margin: 50px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 25%;
+    margin: 20px 0;
+}
+
+.thumbnail img {
+    width: 90%;
+    transition: 0.3s;
+    position: relative;
+    animation-name: geser;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.thumbnail img:hover {
+    border: 2px solid #f05454;
+}
+
+.textj {
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.textj h1 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.textj h3 {
+    padding-top: 20px;
+}
+
+.textj p {
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.list li {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.imgjurusan {
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.textj .textabc {
+    padding: 0 80px;
+}
+
+/* halaman galeri */
+
+.contgaleri {
+    background-image: linear-gradient(#F5D2FF, #C6F5FD);
+}
+
+.textg {
+    padding-top: 150px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.kotakgallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 100px;
+}
+
+.gallery {
+    margin: 12px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    float: left;
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2e393b;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 27%;
+    padding-left: 50px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col .telepon {
+    margin-top: 30px;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    background-color: #f05454;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+/* responsive footer */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    background-color: #273133;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/* responsive */
+/* hp */
+@media screen and (max-width: 950px) {
+
+    .content1 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 0px 0px;
+    }
+
+    .content1 img {
+        width: 450px;
+        height: 300px;
+        margin: 0px auto;
+    }
+
+    .content1 .text {
+        margin: -100px auto 0px;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .vmm {
+        display: block;
+        margin-top: -100px;
+    }
+
+    .kotak {
+        margin: 0px auto 100px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .sejarah {
+        text-align: justify;
+    }
+
+    .sejarah h1 {
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .matrikulasi {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px 30px;
+    }
+
+    .matrikulasi img {
+        width: 400px;
+        height: 400px;
+        margin: 0px auto;
+    }
+
+    .matrikulasi h1 {
+        margin-top: 30px;
+    }
+
+    .matrikulasi h2 {
+        font-size: 26px;
+    }
+
+    .matrikulasi p {
+        text-align: justify;
+    }
+
+    .jurusan h1 {
+        padding-top: 50px;
+    }
+
+    .galerij {
+        width: 100%;
+    }
+
+    .thumbnail {
+        width: 50%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .textj h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .textj img {
+        width: 90%;
+        height: 350px;
+    }
+
+    .textj .textabc {
+        margin-top: -200px;
+        padding: 0 30px;
+    }
+
+    .fasilitas .kantin {
+        display: block;
+    }
+
+    .fasilitas .kantin .text {
+        padding-left: 0px;
+        text-align: justify;
+    }
+
+    .fotokantin {
+        display: flex;
+    }
+
+    .fotoperpus {
+        display: flex;
+    }
+
+    .kantin img {
+        margin-right: 10px;
+        width: 50%;
+        height: auto;
+    }
+
+    .fasilitas .perpustakaan {
+        display: block;
+    }
+
+    .fasilitas .perpustakaan .text {
+        padding-right: 0px;
+        text-align: justify;
+    }
+
+    .perpustakaan img {
+        margin-right: 10px;
+        width: 50%;
+        height: auto;
+    }
+
+    .fotofasilitas {
+        display: block;
+        text-align: center;
+    }
+
+    .fotofasilitas img {
+        width: 90%;
+        height: auto;
+        padding-right: 0px;
+    }
+
+    .kotakgallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px 20px;
+    }
+
+    .gallery {
+        width: 43%;
+        height: auto;
+    }
+
+    .desc {
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+    }
+
+}
