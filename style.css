@@ -620,7 +620,7 @@ ul {
     .content1 {
         display: flex;
         flex-wrap: wrap;
-        padding: 150px 0px 0px;
+        padding: 0px 0px 0px;
     }
 
     .content1 img {
