@@ -31,7 +31,6 @@ body {
 
 .bgjurusan {
     background: url(img/bgjurusan2.png);
-    background-size: 100vw;
     background-position: 0 -200px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -40,7 +39,6 @@ body {
 
 .bgmatrik {
     background: url(img/bgmatrik.png);
-    background-size: 100vw;
     background-position: 0 -200px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -48,7 +46,6 @@ body {
 
 .bgfasilitas {
     background: url(img/bgfasilitas2.png);
-    background-size: 100vw;
     background-position: 0 100px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
