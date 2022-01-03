@@ -23,6 +23,7 @@ body {
 
 .utama {
     background: url(img/background3.png);
+    background-size: 100vw;
     background-position: 0 -50px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -30,6 +31,7 @@ body {
 
 .bgjurusan {
     background: url(img/bgjurusan2.png);
+    background-size: 100vw;
     background-position: 0 -200px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -38,6 +40,7 @@ body {
 
 .bgmatrik {
     background: url(img/bgmatrik.png);
+    background-size: 100vw;
     background-position: 0 -200px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -45,6 +48,7 @@ body {
 
 .bgfasilitas {
     background: url(img/bgfasilitas2.png);
+    background-size: 100vw;
     background-position: 0 100px;
     background-color: #F5D2FF;
     background-repeat: no-repeat;
@@ -133,7 +137,7 @@ nav ul li a:hover {
 @media screen and (max-width: 860px) {
     nav ul {
         position: absolute;
-        right: -25px;
+        right: -30px;
         top: -10px;
         flex-direction: column;
         height: 100vh;
@@ -469,11 +473,11 @@ nav ul li a:hover {
 .kotakgallery {
     display: flex;
     flex-wrap: wrap;
-    padding: 80px 100px;
+    padding: 80px 0px;
 }
 
 .gallery {
-    margin: 12px;
+    margin: 20px auto;
     background-color: #ffffff;
     border: 1px solid black;
     float: left;
